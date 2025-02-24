@@ -28,20 +28,20 @@ cd web-course
 
 2. Create environment:
 ```bash
-make env  # создаст .env из примера
+make env  # make env from .env.example
 ```
 
 3. Installation:
 ```bash
-make install  # запуск контейнеров и установка зависимостей
+make install  # start container and install depends
 ```
 
 ## Usage
 Makefile commands:
 ```makefile
-up       # Запуск контейнеров
-down     # Остановка контейнеров
-migrate  # Применить миграции БД
+up       # start containers
+down     # stop containers
+migrate  # migrate
 ```
 
 web app url: http://localhost:8080
@@ -51,7 +51,7 @@ web app url: http://localhost:8080
 ├── docker-compose.yaml
 ├── Makefile
 ├── .env.example
-└── web/            # Веб-корень
+└── web/            # web root
 ```
 
 ## Additional information
